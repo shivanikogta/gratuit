@@ -15,8 +15,8 @@ Maps/lists events happening within a given radius of an individual, specifically
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
+- **Category:** Food & Drink
+- **Mobile:** This app would be primarily developed for mobile. While it may be viable on a computer, it would restrict usability as locations would not be updated as frequently. Hence, we will be aiming to develop a mobile version.
 - **Story:**
 - **Market:**
 - **Habit:**
