@@ -11,15 +11,15 @@ Unit 8: Group Milestone - README
 
 ## Overview
 ### Description
-Maps/lists events happening within a given radius of an individual, specifically those providing free food.
+Maps/lists events happening within a given radius of an individual, specifically those providing free products (e.g. food, pens, sunglasses - essentially any free item).
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:** Food & Drink
+- **Category:** Lifestyle
 - **Mobile:** This app would be primarily developed for mobile. While it may be viable on a computer, it would restrict usability as locations would not be updated as frequently. Hence, we will be aiming to develop a mobile version.
 - **Story:**
 - **Market:**
-- **Habit:**
+- **Habit:** This app could be used as frequently as the user wants, depending on how often they choose to seek out free products, and what exactly they’re looking for.
 - **Scope:**
 
 ## Product Spec
