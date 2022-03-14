@@ -11,7 +11,7 @@ Unit 8: Group Milestone - README
 
 ## Overview
 ### Description
-[Description of your app]
+Maps/lists events happening within a given radius of an individual, specifically those providing free food.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
