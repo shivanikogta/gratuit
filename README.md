@@ -85,9 +85,9 @@ Maps/lists events happening within a given radius of an individual, specifically
 
 **Tab Navigation** (Tab to Screen)
 
-* Map view
-* List view (optional user story)
-* Starred events (optional user story)
+* Map view [2nd Tab Button -> Table View of Events]
+* List view (optional user story) [1st Tab Button -> Map View]
+* Starred events (optional user story) [1st Tab Button -> Map View, 2nd Tab Button -> Table View of Events]
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
