@@ -16,10 +16,10 @@ Maps/lists events happening within a given radius of an individual, specifically
 ### App Evaluation
 - **Category:** Lifestyle
 - **Mobile:** This app would be primarily developed for mobile. While it may be viable on a computer, it would restrict usability as locations would not be updated as frequently. Hence, we will be aiming to develop a mobile version.
-- **Story:**
-- **Market:**
+- **Story:** Allows users to provide information about events with free products and to search for nearby events with free products
+- **Market:** Anyone that is interested in acquiring free products/merchandise can use this product. Ability to star events based on interests allows users with unique interests to save relevant content.
 - **Habit:** This app could be used as frequently as the user wants, depending on how often they choose to seek out free products, and what exactly they’re looking for.
-- **Scope:**
+- **Scope:** Starting out with a narrow focus, mainly just providing free products of any sort. Extended to display geographical locations on a map given a preset radius from the user's device location. 
 
 ## Product Spec
 
