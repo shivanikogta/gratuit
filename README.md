@@ -27,13 +27,17 @@ Maps/lists events happening within a given radius of an individual, specifically
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+1. User can create an account (sign up).
+2. User stays logged in across restarts.
+3. User can add a new event.
+4. Events can be displayed in a map view to user.
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+1. User can star an event.
+2. Starred events are shown in a table view to user.
+3. All events are shown in a table view to user.
+4. User can add a photo for the product at a given event.
 
 ### 2. Screen Archetypes
 
