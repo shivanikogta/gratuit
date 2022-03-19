@@ -64,9 +64,9 @@ Maps/lists events happening within a given radius of an individual, specifically
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Map view
+* List view (optional user story)
+* Starred events (optional user story)
 
 **Flow Navigation** (Screen to Screen)
 
