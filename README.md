@@ -42,10 +42,23 @@ Maps/lists events happening within a given radius of an individual, specifically
 ### 2. Screen Archetypes
 
 1. User can create an account (sign up).
-<img width="226" alt="Screen Shot 2022-03-19 at 5 30 45 PM" src="https://user-images.githubusercontent.com/70518439/159139070-803f2de1-8abf-4f9f-b20b-96f5e930abb1.png">
+<img width="218" alt="Screen Shot 2022-03-19 at 5 35 18 PM" src="https://user-images.githubusercontent.com/70518439/159139168-1367bd8b-c0bd-4e83-ba2d-be83cbf25215.png">
 2. User stays logged in across restarts.
+<img width="242" alt="Screen Shot 2022-03-19 at 5 30 13 PM" src="https://user-images.githubusercontent.com/70518439/159139089-1a47a54a-6061-4859-9f28-7bccb2674a31.png">
 3. User can add a new event.
+<img width="226" alt="Screen Shot 2022-03-19 at 5 30 45 PM" src="https://user-images.githubusercontent.com/70518439/159139097-b12335ca-0b62-4901-ab6a-066966a8dd0c.png">
 4. Events can be displayed in a map view to user.
+<img width="227" alt="Screen Shot 2022-03-19 at 5 30 29 PM" src="https://user-images.githubusercontent.com/70518439/159139101-cfe9803d-e7c2-424f-8de1-7f6aab15d0ac.png">
+
+*Optional event user stories
+1. User can star an event.
+<img width="226" alt="Screen Shot 2022-03-19 at 5 30 37 PM" src="https://user-images.githubusercontent.com/70518439/159139186-7144dbfd-87a2-4ae4-9dd4-d99d2547cfb0.png">
+2. Starred events are shown in a table view to user.
+<img width="191" alt="Screen Shot 2022-03-19 at 5 36 32 PM" src="https://user-images.githubusercontent.com/70518439/159139202-a3c765d7-4819-4e05-a10f-1fdf7bc739f5.png">
+3. All events are shown in a table view to user.
+<img width="226" alt="Screen Shot 2022-03-19 at 5 30 37 PM" src="https://user-images.githubusercontent.com/70518439/159139208-ef88deee-baa1-43e9-b2d3-ff1ed1ef7b9e.png">
+4. User can add a photo for the product at a given event.
+<img width="226" alt="Screen Shot 2022-03-19 at 5 30 45 PM" src="https://user-images.githubusercontent.com/70518439/159139210-ac8d221d-7247-426c-91c2-a0d29210b317.png">
 
 ### 3. Navigation
 
