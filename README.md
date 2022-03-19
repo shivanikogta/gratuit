@@ -41,12 +41,11 @@ Maps/lists events happening within a given radius of an individual, specifically
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+1. User can create an account (sign up).
+<img width="226" alt="Screen Shot 2022-03-19 at 5 30 45 PM" src="https://user-images.githubusercontent.com/70518439/159139070-803f2de1-8abf-4f9f-b20b-96f5e930abb1.png">
+2. User stays logged in across restarts.
+3. User can add a new event.
+4. Events can be displayed in a map view to user.
 
 ### 3. Navigation
 
