@@ -62,20 +62,32 @@ Maps/lists events happening within a given radius of an individual, specifically
 
 ### 3. Navigation
 
+**Flow Navigation** (Screen to Screen)
+
+* Sign up
+   * Create account button (goes to 'Map view')
+* Login
+   * Create account button (goes to 'Sign up')
+   * Login button (goes to 'Map view')
+* Map view [DEFAULT]
+   * Create event button (goes to 'Create event')
+   * Table view (goes to 'Event list')
+   * Starred events (goes to 'My events')
+* Event list
+   * Create event button (goes to 'Create event')
+   * Map view (goes to 'Map view')
+   * Starred events (goes to 'My events')
+* My events
+   * Map view (goes to 'Map view')
+   * Table view (goes to 'Event list')
+* Create event
+   * Submit button (goes to 'Map view')
+
 **Tab Navigation** (Tab to Screen)
 
 * Map view
 * List view (optional user story)
 * Starred events (optional user story)
-
-**Flow Navigation** (Screen to Screen)
-
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
