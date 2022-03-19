@@ -44,13 +44,13 @@ Maps/lists events happening within a given radius of an individual, specifically
 1. User can create an account (sign up).
 <img width="218" alt="Screen Shot 2022-03-19 at 5 35 18 PM" src="https://user-images.githubusercontent.com/70518439/159139168-1367bd8b-c0bd-4e83-ba2d-be83cbf25215.png">
 2. User stays logged in across restarts.
-<img width="242" alt="Screen Shot 2022-03-19 at 5 30 13 PM" src="https://user-images.githubusercontent.com/70518439/159139089-1a47a54a-6061-4859-9f28-7bccb2674a31.png">
+<img width="240" alt="Screen Shot 2022-03-19 at 5 30 13 PM" src="https://user-images.githubusercontent.com/70518439/159139248-47a15783-8e91-4bdd-bf62-dea989ddfbd5.png">
 3. User can add a new event.
 <img width="226" alt="Screen Shot 2022-03-19 at 5 30 45 PM" src="https://user-images.githubusercontent.com/70518439/159139097-b12335ca-0b62-4901-ab6a-066966a8dd0c.png">
 4. Events can be displayed in a map view to user.
 <img width="227" alt="Screen Shot 2022-03-19 at 5 30 29 PM" src="https://user-images.githubusercontent.com/70518439/159139101-cfe9803d-e7c2-424f-8de1-7f6aab15d0ac.png">
 
-*Optional event user stories
+**Optional event user stories**
 1. User can star an event.
 <img width="226" alt="Screen Shot 2022-03-19 at 5 30 37 PM" src="https://user-images.githubusercontent.com/70518439/159139186-7144dbfd-87a2-4ae4-9dd4-d99d2547cfb0.png">
 2. Starred events are shown in a table view to user.
