@@ -90,8 +90,8 @@ Maps/lists events happening within a given radius of an individual, specifically
 * Starred events (optional user story) [3rd tab button -> My events]
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+<img src="https://user-images.githubusercontent.com/10847009/159151079-f8aef445-d042-4136-83f2-8170d5dbfcb3.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
