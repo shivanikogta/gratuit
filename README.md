@@ -119,7 +119,7 @@ Maps/lists events happening within a given radius of an individual, specifically
 | eventLocation     | String            | The location of the event
 | startTime         | DateTime          | This will be the time when the event was posted
 | endTime           | DateTime          | This will be the time when the event ends
-| creator           | pointer to user   | This will be the User who created the event
+| creator           | Pointer to User   | This will be the User who created the event
 
 ### Models
 [Add table of models]
