@@ -100,10 +100,15 @@ Maps/lists events happening within a given radius of an individual, specifically
 ### [BONUS] Interactive Prototype
 
 ## Schema 
+**User**
 | Property      | Type          | Description
 | ------------- | ------------- | -------------
-| Content Cell  | Content Cell  | Content Cell
-| Content Cell  | Content Cell  | Content Cell
+| username      | String        | 
+| password      | String        | 
+| eventsCreated | Pointer to Event        | 
+| eventsStarred | Pointer to Event        | 
+
+**Event**
 
 ### Models
 [Add table of models]
