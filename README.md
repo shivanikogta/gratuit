@@ -100,7 +100,11 @@ Maps/lists events happening within a given radius of an individual, specifically
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+| Property      | Type          | Description
+| ------------- | ------------- | -------------
+| Content Cell  | Content Cell  | Content Cell
+| Content Cell  | Content Cell  | Content Cell
+
 ### Models
 [Add table of models]
 ### Networking
