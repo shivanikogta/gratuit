@@ -101,14 +101,22 @@ Maps/lists events happening within a given radius of an individual, specifically
 
 ## Schema 
 **User**
-| Property      | Type          | Description
-| ------------- | ------------- | -------------
-| username      | String        | 
-| password      | String        | 
+| Property      | Type                    | Description
+| ------------- | -------------           | -------------
+| username      | String                  | 
+| password      | String                  | 
 | eventsCreated | Pointer to Event        | 
 | eventsStarred | Pointer to Event        | 
 
 **Event**
+| Property          | Type              | Description
+| -------------     | -------------     | -------------
+| eventName         | String            | 
+| eventDescription  | String            | 
+| eventImage        | File              | 
+| startTime         | DateTime          | 
+| endTime           | DateTime          | 
+| creator           | pointer to user   | 
 
 ### Models
 [Add table of models]
