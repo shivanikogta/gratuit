@@ -103,20 +103,21 @@ Maps/lists events happening within a given radius of an individual, specifically
 **User**
 | Property      | Type                    | Description
 | ------------- | -------------           | -------------
-| username      | String                  | 
-| password      | String                  | 
-| eventsCreated | Pointer to Event        | 
-| eventsStarred | Pointer to Event        | 
+| username      | String                  | User's username as a string
+| password      | String                  | User’s password as a string
+| eventsCreated | Pointer to Event        | A dictionary of events that the User has created
+| eventsStarred | Pointer to Event        | A dictionary of events that the User has starred
 
 **Event**
 | Property          | Type              | Description
 | -------------     | -------------     | -------------
-| eventName         | String            | 
-| eventDescription  | String            | 
-| eventImage        | File              | 
-| startTime         | DateTime          | 
-| endTime           | DateTime          | 
-| creator           | pointer to user   | 
+| eventName         | String            | The name of the event
+| eventDescription  | String            | Description of events is a required parameter and may include information about the event host and free items offered in the events.
+| eventImage        | File              | An image related to the event (photo of the event, image of the hosting organization, …). If no image is provided, there will be a transparent placeholder block
+| eventLocation     | String            | The location of the event
+| startTime         | DateTime          | This will be the time when the event was posted.
+| endTime           | DateTime          | This will be the time when the event ends.
+| creator           | pointer to user   | This will be the User who created the event
 
 ### Models
 [Add table of models]
