@@ -123,7 +123,7 @@ Maps/lists events happening within a given radius of an individual, specifically
 | creator           | Pointer to User   | This will be the User who created the event
 
 ### Networking
-##Sign up screen
+#### Sign up screen
 - (Create/POST) Create a new username & password
 
 #### Login screen
