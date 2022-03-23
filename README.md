@@ -99,8 +99,7 @@ Maps/lists events happening within a given radius of an individual, specifically
 
 ### [BONUS] Interactive Prototype
 
-## Schema 
-
+## Schema
 ### Models
 **User**
 | Property      | Type                    | Description
