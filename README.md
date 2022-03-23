@@ -123,5 +123,23 @@ Maps/lists events happening within a given radius of an individual, specifically
 | creator           | Pointer to User   | This will be the User who created the event
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
+##Sign up screen
+- (Create/POST) Create a new username & password
+
+##Login screen
+- (Read/GET) Query for username & password
+
+##Map view
+- (Read/GET) Query for event locations
+
+##List View
+- (Read/GET) Query for all events
+- (Update/PUT) Add a star to an event
+- (Update/PUT) Remove a star from an event
+
+##My Events
+- (Read/GET) Query for all events starred by the user
+- (Update/PUT) Remove a star from an event 
+
+##Create Event
+- (Create/POST) Create a new Event Object
