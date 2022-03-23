@@ -126,20 +126,20 @@ Maps/lists events happening within a given radius of an individual, specifically
 ##Sign up screen
 - (Create/POST) Create a new username & password
 
-##Login screen
+#### Login screen
 - (Read/GET) Query for username & password
 
-##Map view
+#### Map view
 - (Read/GET) Query for event locations
 
-##List View
+#### List View
 - (Read/GET) Query for all events
 - (Update/PUT) Add a star to an event
 - (Update/PUT) Remove a star from an event
 
-##My Events
+#### My Events
 - (Read/GET) Query for all events starred by the user
 - (Update/PUT) Remove a star from an event 
 
-##Create Event
+#### Create Event
 - (Create/POST) Create a new Event Object
