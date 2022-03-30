@@ -18,6 +18,10 @@
 		B2F49FC527F25895009415BD /* EventsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F49FC427F25895009415BD /* EventsListViewController.swift */; };
 		B2F49FC727F258CD009415BD /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F49FC627F258CD009415BD /* CreateEventViewController.swift */; };
 		B2F49FC927F2591F009415BD /* MyEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F49FC827F2591F009415BD /* MyEventsViewController.swift */; };
+		D197F21527F4941100518D71 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D197F21427F4941100518D71 /* MapView.storyboard */; };
+		D197F21727F4946500518D71 /* EventsListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D197F21627F4946500518D71 /* EventsListView.storyboard */; };
+		D197F21B27F494DD00518D71 /* MyEventsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D197F21A27F494DD00518D71 /* MyEventsView.storyboard */; };
+		D197F21D27F4951500518D71 /* CreateEvents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D197F21C27F4951500518D71 /* CreateEvents.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		B2F49FC427F25895009415BD /* EventsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewController.swift; sourceTree = "<group>"; };
 		B2F49FC627F258CD009415BD /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		B2F49FC827F2591F009415BD /* MyEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewController.swift; sourceTree = "<group>"; };
+		D197F21427F4941100518D71 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+		D197F21627F4946500518D71 /* EventsListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventsListView.storyboard; sourceTree = "<group>"; };
+		D197F21A27F494DD00518D71 /* MyEventsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyEventsView.storyboard; sourceTree = "<group>"; };
+		D197F21C27F4951500518D71 /* CreateEvents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEvents.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,10 @@
 				B2F49FAE27F25655009415BD /* SceneDelegate.swift */,
 				B2F49FB027F25655009415BD /* ViewController.swift */,
 				B2F49FB227F25655009415BD /* Main.storyboard */,
+				D197F21427F4941100518D71 /* MapView.storyboard */,
+				D197F21C27F4951500518D71 /* CreateEvents.storyboard */,
+				D197F21627F4946500518D71 /* EventsListView.storyboard */,
+				D197F21A27F494DD00518D71 /* MyEventsView.storyboard */,
 				B2F49FC827F2591F009415BD /* MyEventsViewController.swift */,
 				B2F49FC627F258CD009415BD /* CreateEventViewController.swift */,
 				B2F49FC427F25895009415BD /* EventsListViewController.swift */,
@@ -140,9 +152,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D197F21B27F494DD00518D71 /* MyEventsView.storyboard in Resources */,
+				D197F21727F4946500518D71 /* EventsListView.storyboard in Resources */,
 				B2F49FB927F25657009415BD /* LaunchScreen.storyboard in Resources */,
+				D197F21527F4941100518D71 /* MapView.storyboard in Resources */,
 				B2F49FB627F25657009415BD /* Assets.xcassets in Resources */,
 				B2F49FB427F25655009415BD /* Main.storyboard in Resources */,
+				D197F21D27F4951500518D71 /* CreateEvents.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
