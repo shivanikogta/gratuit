@@ -2,7 +2,7 @@ Unit 10: Group Milestone - README
 ===
 
 # GIF (Build progress)
-![alt text] gif.gif
+![] gif.gif
 
 # gratuit
 
