@@ -22,9 +22,12 @@
 		D197F21727F4946500518D71 /* EventsListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D197F21627F4946500518D71 /* EventsListView.storyboard */; };
 		D197F21B27F494DD00518D71 /* MyEventsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D197F21A27F494DD00518D71 /* MyEventsView.storyboard */; };
 		D197F21D27F4951500518D71 /* CreateEvents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D197F21C27F4951500518D71 /* CreateEvents.storyboard */; };
+		D825CBF749E92BB51E869676 /* Pods_gratuit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E4DF4DFCC4869AAE94464C /* Pods_gratuit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12A6F228B8CA546F27700C79 /* Pods-gratuit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratuit.release.xcconfig"; path = "Target Support Files/Pods-gratuit/Pods-gratuit.release.xcconfig"; sourceTree = "<group>"; };
+		3C5EF974DDF05AA194739135 /* Pods-gratuit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratuit.debug.xcconfig"; path = "Target Support Files/Pods-gratuit/Pods-gratuit.debug.xcconfig"; sourceTree = "<group>"; };
 		B2F49FA927F25655009415BD /* gratuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gratuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F49FAC27F25655009415BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2F49FAE27F25655009415BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		B2F49FC427F25895009415BD /* EventsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewController.swift; sourceTree = "<group>"; };
 		B2F49FC627F258CD009415BD /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		B2F49FC827F2591F009415BD /* MyEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewController.swift; sourceTree = "<group>"; };
+		D0E4DF4DFCC4869AAE94464C /* Pods_gratuit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gratuit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D197F21427F4941100518D71 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
 		D197F21627F4946500518D71 /* EventsListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventsListView.storyboard; sourceTree = "<group>"; };
 		D197F21A27F494DD00518D71 /* MyEventsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyEventsView.storyboard; sourceTree = "<group>"; };
@@ -49,17 +53,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D825CBF749E92BB51E869676 /* Pods_gratuit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1538FD55F75E34E7CA654379 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C5EF974DDF05AA194739135 /* Pods-gratuit.debug.xcconfig */,
+				12A6F228B8CA546F27700C79 /* Pods-gratuit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		989469F4EE13D69207F3F570 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0E4DF4DFCC4869AAE94464C /* Pods_gratuit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B2F49FA027F25655009415BD = {
 			isa = PBXGroup;
 			children = (
 				B2F49FAB27F25655009415BD /* gratuit */,
 				B2F49FAA27F25655009415BD /* Products */,
+				1538FD55F75E34E7CA654379 /* Pods */,
+				989469F4EE13D69207F3F570 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2F49FBD27F25657009415BD /* Build configuration list for PBXNativeTarget "gratuit" */;
 			buildPhases = (
+				6012C05C043165E3487DD36D /* [CP] Check Pods Manifest.lock */,
 				B2F49FA527F25655009415BD /* Sources */,
 				B2F49FA627F25655009415BD /* Frameworks */,
 				B2F49FA727F25655009415BD /* Resources */,
+				18A66EDE92D1110B3666807E /* [CP] Embed Pods Frameworks */,
+				AE72CA4FA9C188FBB07F7214 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +191,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18A66EDE92D1110B3666807E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gratuit/Pods-gratuit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gratuit/Pods-gratuit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gratuit/Pods-gratuit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6012C05C043165E3487DD36D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gratuit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE72CA4FA9C188FBB07F7214 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gratuit/Pods-gratuit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gratuit/Pods-gratuit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gratuit/Pods-gratuit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2F49FA527F25655009415BD /* Sources */ = {
@@ -320,6 +407,7 @@
 		};
 		B2F49FBE27F25657009415BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5EF974DDF05AA194739135 /* Pods-gratuit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,6 +436,7 @@
 		};
 		B2F49FBF27F25657009415BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A6F228B8CA546F27700C79 /* Pods-gratuit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
