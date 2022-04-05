@@ -88,11 +88,22 @@
                     <connections>
                         <outlet property="passwordField" destination="qEq-0Z-CFt" id="4ni-kl-zeG"/>
                         <outlet property="usernameField" destination="Jqo-BR-14q" id="4qo-tB-uZv"/>
+                        <segue destination="KAw-fC-sOE" kind="showDetail" identifier="LoginToMap" id="S7M-zI-lYw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="107.8125"/>
+        </scene>
+        <!--MapView-->
+        <scene sceneID="V29-jD-R7N">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MapViewController" storyboardName="MapView" id="KAw-fC-sOE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6Rb-G3-Kld"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPU-lM-g5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="489"/>
         </scene>
         <!--SignUpViewController-->
         <scene sceneID="Nrf-YH-pac">

@@ -24,16 +24,16 @@ class SignUpLoginViewController: UIViewController {
         let username = usernameField.text!
         let password = passwordField.text!
         
-        /*
-        PFUser.logInWithUsername(inBackground: username, password: password) { ( user, error) in
-            if (user != nil) {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }
-            else {
-                print("Error: \(String(describing: error?.localizedDescription)).")
-            }
-        }
-         */
+        
+        //PFUser.logInWithUsername(inBackground: username, password: password) { ( user, error) in//
+         //   if (user != nil) {
+                self.performSegue(withIdentifier: "LoginToMap", sender: nil)
+        //    }
+        //    else {
+         //       print("Error: \(String(describing: error?.localizedDescription)).")
+        //    }
+       // }
+         
     }
     
     
