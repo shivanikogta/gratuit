@@ -7,8 +7,11 @@
 
 import UIKit
 import CoreLocation
+import GoogleMaps
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
+    
+    lazy var mapView = GMSMapView();
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +20,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
         
         var locationManager = CLLocationManager()
-        lazy var mapView = GMSMapView()
         mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
         self.view.addSubview(mapView)
         
@@ -47,7 +49,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         mapView.isMyLocationEnabled = true
         self.view = mapView
 
-        locationManager.stopUpdatingLocation()
+        manager.stopUpdatingLocation()
     }
 
 
