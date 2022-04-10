@@ -48,7 +48,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         mapView.animate(to: camera)
     }
 
-
+    @IBAction func onAddEvent(_ sender: Any) {
+        performSegue(withIdentifier: "goToCreateEvents", sender: self)
+    }
+    /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToCreateEvents" {
+            guard let vc = segue.destination as?  CreateEventViewController else {return}
+        }
+    }
+     */
+    
     /*
     // MARK: - Navigation
 
