@@ -9,7 +9,7 @@ import UIKit
 import AlamofireImage
 import Parse
 
-class CreateEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CreateEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     
     @IBOutlet weak var imageView: UIImageView!
@@ -18,10 +18,9 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var eventDescription: UITextField!
     @IBOutlet weak var eventLocation: UITextField!
     
-    @IBOutlet weak var startTime: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
-    @IBOutlet weak var endTime: UITextField!
-    
+    @IBOutlet weak var endDatePicker: UIDatePicker!
     
     
     override func viewDidLoad() {
@@ -59,8 +58,8 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
         event["eventName"] = eventName.text
         event["eventDescription"] = eventDescription.text
         event["eventLocation"] = eventLocation.text
-        event["startTime"] = startTime.text
-        event["endTime"] = endTime.text
+        //event["startTime"] = startTime.text
+        //event["endTime"] = endTime.text
         event["creator"] = PFUser.current()!
         
         let imageData = imageView.image!.pngData()
