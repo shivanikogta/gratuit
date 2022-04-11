@@ -25,7 +25,7 @@ class SignUpLoginViewController: UIViewController {
         let password = passwordField.text!
         
         
-        PFUser.logInWithUsername(inBackground: username, password: password) { ( user, error) in//
+        PFUser.logInWithUsername(inBackground: username, password: password) { ( user, error) in
             if (user != nil) {
                 self.performSegue(withIdentifier: "LoginToMap", sender: nil)
             }
