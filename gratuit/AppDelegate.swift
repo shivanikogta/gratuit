@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 import GoogleMaps
 
@@ -13,9 +14,14 @@ import GoogleMaps
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = "e0SodVTsTtcymIXPDvDGAA6e9F903SBkQy4S5Ugr"
+                    $0.clientKey = "1LscoC3fmqR9gjhnoei6vHtVcUKUl5dqY5v2LiCx"
+                    $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: parseConfig)
         
         GMSServices.provideAPIKey("AIzaSyBluXbCjtGQuJzAd-KZ-BVfzzWQPTiNI3A")
         return true
