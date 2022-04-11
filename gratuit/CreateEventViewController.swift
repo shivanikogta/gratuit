@@ -7,11 +7,22 @@
 
 import UIKit
 import AlamofireImage
+import Parse
 
 class CreateEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var eventName: UITextField!
+    
+    @IBOutlet weak var eventDescription: UITextField!
+    @IBOutlet weak var eventLocation: UITextField!
+    
+    @IBOutlet weak var startTime: UITextField!
+    
+    @IBOutlet weak var endTime: UITextField!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +52,27 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
         imageView.image = scaledImage
     }
     
+    @IBAction func onSubmit(_ sender: Any) {
+        let event = PFObject(className: "Event")
+        event["eventID"] = NSUUID().uuidString
+        event["eventName"] = eventName.text
+        event["eventDescription"] = eventDescription.text
+        event["eventLocation"] = eventLocation.text
+        event["startTime"] = startTime.text
+        event["endTime"] = endTime.text
+        event["creator"] = NSNull()
+        
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(name: "image.png", data: imageData!)
+        event["eventImage"] = file
+        event.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                print("error in saving photo")
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 
