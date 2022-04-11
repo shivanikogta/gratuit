@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//import Parse
+import Parse
 
 class SignUpLoginViewController: UIViewController {
 
@@ -25,20 +25,19 @@ class SignUpLoginViewController: UIViewController {
         let password = passwordField.text!
         
         
-        //PFUser.logInWithUsername(inBackground: username, password: password) { ( user, error) in//
-         //   if (user != nil) {
+        PFUser.logInWithUsername(inBackground: username, password: password) { ( user, error) in//
+            if (user != nil) {
                 self.performSegue(withIdentifier: "LoginToMap", sender: nil)
-        //    }
-        //    else {
-         //       print("Error: \(String(describing: error?.localizedDescription)).")
-        //    }
-       // }
+            }
+            else {
+                print("Error: \(String(describing: error?.localizedDescription)).")
+            }
+        }
          
     }
     
     
     @IBAction func onSignUp(_ sender: Any) {
-        /*
         let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
@@ -51,7 +50,6 @@ class SignUpLoginViewController: UIViewController {
                 print("Error: \(String(describing: error?.localizedDescription)).")
             }
         }
-         */
     }
     /*
     // MARK: - Navigation
