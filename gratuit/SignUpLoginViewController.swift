@@ -11,13 +11,17 @@ import Parse
 class SignUpLoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
-   
     @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
+            self.performSegue(withIdentifier: "LoginToMap", sender: self)
+        }
     }
     
     @IBAction func onLogin(_ sender: Any) {
@@ -27,6 +31,7 @@ class SignUpLoginViewController: UIViewController {
         
         PFUser.logInWithUsername(inBackground: username, password: password) { ( user, error) in
             if (user != nil) {
+                UserDefaults.standard.set(true, forKey: "userLoggedIn")
                 self.performSegue(withIdentifier: "LoginToMap", sender: nil)
             }
             else {
