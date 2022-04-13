@@ -49,6 +49,7 @@ class SignUpLoginViewController: UIViewController {
         
         user.signUpInBackground {  (success, error) in
             if success {
+                UserDefaults.standard.set(true, forKey: "userLoggedIn")
                 self.performSegue(withIdentifier: "LoginToMap", sender: nil)
             }
             else {

@@ -8,10 +8,10 @@
 import UIKit
 import CoreLocation
 import GoogleMaps
+import Parse
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     
-
     @IBOutlet weak var mapView: GMSMapView!
     
     let locationManager = CLLocationManager()
@@ -51,13 +51,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func onAddEvent(_ sender: Any) {
         performSegue(withIdentifier: "goToCreateEvents", sender: self)
     }
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToCreateEvents" {
-            guard let vc = segue.destination as?  CreateEventViewController else {return}
-        }
-    }
-     */
     
     /*
     // MARK: - Navigation
@@ -68,5 +61,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let LoginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else {return}
+        UserDefaults.standard.set(false, forKey: "userLoggedIn")
+        delegate.window?.rootViewController = LoginViewController
+    }
 
 }
