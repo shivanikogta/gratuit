@@ -53,23 +53,30 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func onSubmit(_ sender: Any) {
-        let event = PFObject(className: "Event")
-        event["eventID"] = NSUUID().uuidString
-        event["eventName"] = eventName.text
-        event["eventDescription"] = eventDescription.text
-        event["eventLocation"] = eventLocation.text
-        //event["startTime"] = startTime.text
-        //event["endTime"] = endTime.text
-        event["creator"] = PFUser.current()!
-        
-        let imageData = imageView.image!.pngData()
-        let file = PFFileObject(name: "image.png", data: imageData!)
-        event["eventImage"] = file
-        event.saveInBackground { (success, error) in
-            if success {
-                self.dismiss(animated: true, completion: nil)
-            } else {
-                print("error in saving photo")
+        if datePicker.date >= Date.now && endDatePicker.date > datePicker.date {
+            print("valid dates")
+            let event = PFObject(className: "Event")
+            event["eventID"] = NSUUID().uuidString
+            event["eventName"] = eventName.text
+            event["eventDescription"] = eventDescription.text
+            event["eventLocation"] = eventLocation.text
+            let formatter = DateFormatter()
+            formatter.dateStyle = .short
+            formatter.timeStyle = .short
+            
+            event["startTime"] = formatter.string(from:datePicker.date)
+            event["endTime"] = formatter.string(from:endDatePicker.date)
+            event["creator"] = PFUser.current()!
+            
+            let imageData = imageView.image!.pngData()
+            let file = PFFileObject(name: "image.png", data: imageData!)
+            event["eventImage"] = file
+            event.saveInBackground { (success, error) in
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    print("error in saving photo")
+                }
             }
         }
     }
