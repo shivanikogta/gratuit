@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WlR-Nh-Gbh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dpj-Lb-Y9M">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -73,7 +73,7 @@
         <scene sceneID="yiK-1r-3yj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WlR-Nh-Gbh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" selectedImage="map" catalog="system" id="QmS-Fo-5Wl">
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" selectedImage="map" id="QmS-Fo-5Wl">
                         <color key="badgeColor" red="0.26274511220000002" green="0.5411764979" blue="0.41176474089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <toolbarItems/>
