@@ -10,7 +10,7 @@ import CoreLocation
 import GoogleMaps
 import Parse
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
     @IBOutlet weak var mapView: GMSMapView!
     
@@ -24,6 +24,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
+        
+        mapView.delegate = self
 
         // Do any additional setup after loading the view.
     }
