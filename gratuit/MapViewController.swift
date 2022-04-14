@@ -65,6 +65,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     */
     
     @IBAction func onLogoutButton(_ sender: Any) {
+        print("logout")
         PFUser.logOut()
         let main = UIStoryboard(name: "Main", bundle: nil)
         let LoginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
