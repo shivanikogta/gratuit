@@ -22,6 +22,8 @@
 		D197F21727F4946500518D71 /* EventsListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D197F21627F4946500518D71 /* EventsListView.storyboard */; };
 		D197F21B27F494DD00518D71 /* MyEventsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D197F21A27F494DD00518D71 /* MyEventsView.storyboard */; };
 		D197F21D27F4951500518D71 /* CreateEvents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D197F21C27F4951500518D71 /* CreateEvents.storyboard */; };
+		D1E1FA752807E0B500DF2B85 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E1FA742807E0B500DF2B85 /* EventDetailsViewController.swift */; };
+		D1E1FA772807E17C00DF2B85 /* eventDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E1FA762807E17C00DF2B85 /* eventDetails.storyboard */; };
 		D825CBF749E92BB51E869676 /* Pods_gratuit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E4DF4DFCC4869AAE94464C /* Pods_gratuit.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		D197F21627F4946500518D71 /* EventsListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventsListView.storyboard; sourceTree = "<group>"; };
 		D197F21A27F494DD00518D71 /* MyEventsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyEventsView.storyboard; sourceTree = "<group>"; };
 		D197F21C27F4951500518D71 /* CreateEvents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEvents.storyboard; sourceTree = "<group>"; };
+		D1E1FA742807E0B500DF2B85 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		D1E1FA762807E17C00DF2B85 /* eventDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = eventDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				B2F49FB027F25655009415BD /* ViewController.swift */,
 				B2F49FB227F25655009415BD /* Main.storyboard */,
 				D197F21427F4941100518D71 /* MapView.storyboard */,
+				D1E1FA762807E17C00DF2B85 /* eventDetails.storyboard */,
 				D197F21C27F4951500518D71 /* CreateEvents.storyboard */,
 				D197F21627F4946500518D71 /* EventsListView.storyboard */,
 				D197F21A27F494DD00518D71 /* MyEventsView.storyboard */,
@@ -110,6 +115,7 @@
 				B2F49FC627F258CD009415BD /* CreateEventViewController.swift */,
 				B2F49FC427F25895009415BD /* EventsListViewController.swift */,
 				B2F49FC227F25849009415BD /* MapViewController.swift */,
+				D1E1FA742807E0B500DF2B85 /* EventDetailsViewController.swift */,
 				B2F49FC027F25809009415BD /* SignUpLoginViewController.swift */,
 				B2F49FB527F25657009415BD /* Assets.xcassets */,
 				B2F49FB727F25657009415BD /* LaunchScreen.storyboard */,
@@ -185,6 +191,7 @@
 				D197F21527F4941100518D71 /* MapView.storyboard in Resources */,
 				B2F49FB627F25657009415BD /* Assets.xcassets in Resources */,
 				B2F49FB427F25655009415BD /* Main.storyboard in Resources */,
+				D1E1FA772807E17C00DF2B85 /* eventDetails.storyboard in Resources */,
 				D197F21D27F4951500518D71 /* CreateEvents.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +268,7 @@
 				B2F49FB127F25655009415BD /* ViewController.swift in Sources */,
 				B2F49FC727F258CD009415BD /* CreateEventViewController.swift in Sources */,
 				B2F49FAD27F25655009415BD /* AppDelegate.swift in Sources */,
+				D1E1FA752807E0B500DF2B85 /* EventDetailsViewController.swift in Sources */,
 				B2F49FC327F25849009415BD /* MapViewController.swift in Sources */,
 				B2F49FAF27F25655009415BD /* SceneDelegate.swift in Sources */,
 			);
