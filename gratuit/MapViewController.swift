@@ -55,11 +55,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         for event in events {
             
             // replace position later with variables
-            
-            let position = CLLocationCoordinate2D(latitude: 10, longitude: 10)
-            let marker = GMSMarker(position: position)
-            marker.title = event["eventName"] as! String
-            marker.map = mapView
+            if let latit = Double(event["latitude"] as! String), let longit = Double(event["longit"] as! String) {
+                
+                let position = CLLocationCoordinate2D(latitude: latit, longitude: longit)
+                let marker = GMSMarker(position: position)
+                marker.title = event["eventName"] as! String
+                marker.map = mapView
+            }
             
         }
         
