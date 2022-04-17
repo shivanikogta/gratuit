@@ -53,7 +53,7 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func onSubmit(_ sender: Any) {
-        if datePicker.date >= Date.now && endDatePicker.date > datePicker.date {
+        if datePicker.date >= Date.now && endDatePicker.date > datePicker.date && eventName.text != "" && eventLocation.text != ""{
             print("valid dates")
             let event = PFObject(className: "Event")
             event["eventID"] = NSUUID().uuidString
@@ -68,9 +68,15 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
             event["endTime"] = formatter.string(from:endDatePicker.date)
             event["creator"] = PFUser.current()!
             
-            let imageData = imageView.image!.pngData()
-            let file = PFFileObject(name: "image.png", data: imageData!)
-            event["eventImage"] = file
+            if let imageData = imageView.image?.pngData() {
+                let file = PFFileObject(name: "image.png", data: imageData)
+                event["eventImage"] = file
+            }
+            else {
+                let image = UIImage(named: "NotAvailable")
+                let file = PFFileObject(name: "image.png", data: image!.pngData()!)
+                event["eventImage"] = file
+            }
             event.saveInBackground { (success, error) in
                 if success {
                     self.dismiss(animated: true, completion: nil)
