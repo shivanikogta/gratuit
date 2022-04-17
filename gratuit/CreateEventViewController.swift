@@ -53,7 +53,7 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func onSubmit(_ sender: Any) {
-        if datePicker.date >= Date.now && endDatePicker.date > datePicker.date && eventName.text != "" && eventLocation.text != ""{
+        print("tapped submit")
             print("valid dates")
             let event = PFObject(className: "Event")
             event["eventID"] = NSUUID().uuidString
@@ -88,7 +88,6 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
                     print("error in saving photo")
                 }
             }
-        }
     }
     /*
     // MARK: - Navigation
