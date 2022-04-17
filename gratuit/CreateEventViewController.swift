@@ -77,6 +77,10 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
                 let file = PFFileObject(name: "image.png", data: image!.pngData()!)
                 event["eventImage"] = file
             }
+            
+            event["latitude"] = String(22.2846)
+            event["longitude"] = String(114.1581)
+            
             event.saveInBackground { (success, error) in
                 if success {
                     self.dismiss(animated: true, completion: nil)
