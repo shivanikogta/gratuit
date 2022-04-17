@@ -78,8 +78,8 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
                 event["eventImage"] = file
             }
             
-            event["latitude"] = String(22.2846)
-            event["longitude"] = String(114.1581)
+            event["latitude"] = String("22.2846")
+            event["longitude"] = String("114.1581")
             
             event.saveInBackground { (success, error) in
                 if success {
