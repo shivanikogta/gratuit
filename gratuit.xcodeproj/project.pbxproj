@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BB422F7280DF91300A389C3 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB422F6280DF91300A389C3 /* EventCell.swift */; };
 		B2F49FAD27F25655009415BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F49FAC27F25655009415BD /* AppDelegate.swift */; };
 		B2F49FAF27F25655009415BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F49FAE27F25655009415BD /* SceneDelegate.swift */; };
 		B2F49FB127F25655009415BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F49FB027F25655009415BD /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		12A6F228B8CA546F27700C79 /* Pods-gratuit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratuit.release.xcconfig"; path = "Target Support Files/Pods-gratuit/Pods-gratuit.release.xcconfig"; sourceTree = "<group>"; };
+		3BB422F6280DF91300A389C3 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		3C5EF974DDF05AA194739135 /* Pods-gratuit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratuit.debug.xcconfig"; path = "Target Support Files/Pods-gratuit/Pods-gratuit.debug.xcconfig"; sourceTree = "<group>"; };
 		B2F49FA927F25655009415BD /* gratuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gratuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F49FAC27F25655009415BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				D197F21427F4941100518D71 /* MapView.storyboard */,
 				D197F21C27F4951500518D71 /* CreateEvents.storyboard */,
 				D197F21627F4946500518D71 /* EventsListView.storyboard */,
+				3BB422F6280DF91300A389C3 /* EventCell.swift */,
 				D197F21A27F494DD00518D71 /* MyEventsView.storyboard */,
 				B2F49FC827F2591F009415BD /* MyEventsViewController.swift */,
 				B2F49FC627F258CD009415BD /* CreateEventViewController.swift */,
@@ -260,6 +263,7 @@
 			files = (
 				B2F49FC127F25809009415BD /* SignUpLoginViewController.swift in Sources */,
 				B2F49FC927F2591F009415BD /* MyEventsViewController.swift in Sources */,
+				3BB422F7280DF91300A389C3 /* EventCell.swift in Sources */,
 				B2F49FC527F25895009415BD /* EventsListViewController.swift in Sources */,
 				B2F49FB127F25655009415BD /* ViewController.swift in Sources */,
 				B2F49FC727F258CD009415BD /* CreateEventViewController.swift in Sources */,
