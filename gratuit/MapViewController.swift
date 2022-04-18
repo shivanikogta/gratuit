@@ -19,6 +19,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
+        
+        print("view did load entered")
+        
         super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
 
@@ -40,30 +43,40 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     
     override func viewDidAppear(_ animated: Bool) {
         
+        print("view did appear entered")
+        
         super.viewDidAppear(animated)
         
-        let query = PFQuery(className: "Events")
-        query.includeKeys(["eventID", "eventName", "eventDescription", "eventLocation", "startTime", "endTime", "creator"])
+        let query = PFQuery(className: "Event")
+        query.includeKeys(["eventID", "eventName", "eventDescription", "eventLocation", "startTime", "endTime", "creator", "latitude", "longitude"])
 
     
-        query.findObjectsInBackground { (events, error) in
-            if events != nil {
-                self.events = events!
+        query.findObjectsInBackground { (info, error) in
+            
+            if info != nil {
+                
+                for item in info! {
+                    self.events.append(item)
+                }
+                
+                for event in self.events {
+                    
+                    print("for loop entered")
+                    
+                    // replace position later with variables
+                    if let latit = Double(event["latitude"] as! String), let longit = Double(event["longitude"] as! String) {
+                        
+                        let position = CLLocationCoordinate2D(latitude: latit, longitude: longit)
+                        let marker = GMSMarker(position: position)
+                        marker.title = event["eventName"] as! String
+                        marker.map = self.mapView
+                    }
+                    
+                }
             }
         }
         
-        for event in events {
-            
-            // replace position later with variables
-            if let latit = Double(event["latitude"] as! String), let longit = Double(event["longit"] as! String) {
-                
-                let position = CLLocationCoordinate2D(latitude: latit, longitude: longit)
-                let marker = GMSMarker(position: position)
-                marker.title = event["eventName"] as! String
-                marker.map = mapView
-            }
-            
-        }
+        print(self.events)
         
         
     }
@@ -82,7 +95,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         
         let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!,
                                                       longitude: (location?.coordinate.longitude)!,
-                                                      zoom: 25.0)
+                                                      zoom: 18.0)
         mapView.camera = camera
         
         mapView.animate(to: camera)
@@ -112,25 +125,32 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         delegate.window?.rootViewController = LoginViewController
     }
     
-    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
+    func mapView(_ mapView: GMSMapView!, didTap marker: GMSMarker!) -> Bool {
         
         print("tapped")
         
         for event in events {
             
             // replace with position variables later
+        
             
-            let location = CLLocationCoordinate2D(latitude: 10, longitude: 10)
-            
-            if (location.latitude == marker.position.latitude
-                && location.longitude == marker.position.longitude) {
+            if let latit = Double(event["latitude"] as! String), let longit = Double(event["longitude"] as! String) {
                 
-                // let sender: PFObject = event
+                let location = CLLocationCoordinate2D(latitude: latit, longitude: longit)
                 
-                // performSegue(withIdentifier: "goToCreateEvents", sender: sender)
-                
-                break
+                if (location.latitude == marker.position.latitude
+                    && location.longitude == marker.position.longitude) {
+                    
+                    print(event)
+                    
+                     let sender: PFObject = event
+                    
+                     performSegue(withIdentifier: "transitionToDetails", sender: sender)
+                    
+                    break
+                }
             }
+
             
         }
         
