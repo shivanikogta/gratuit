@@ -21,13 +21,19 @@ class EventsListViewController: UIViewController, UITableViewDelegate, UITableVi
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        print("view did load finished")
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query = PFQuery(className: "Event")
+        query.includeKeys(["eventName", "eventLocation", "startTime", "eventImage"])
+
         query.limit = 20
+        
+        print("view did appear entered")
         
         query.findObjectsInBackground{(events, error) in
             if events != nil {
@@ -43,18 +49,20 @@ class EventsListViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(events)
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
         let event = events[indexPath.row]
         cell.eventName.text = event["eventName"] as! String
         cell.eventTime.text = event["startTime"] as! String
-        cell.eventLocation.text = event["eventLocation"] as! String
+        // cell.eventLocation.text = event["eventLocation"] as! String
         
         let imageFile = event["eventImage"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         
         cell.photoView.af.setImage(withURL: url)
-        
+        print("here")
+        print(cell)
         return cell
     }
     

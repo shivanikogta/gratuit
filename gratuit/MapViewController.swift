@@ -45,8 +45,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     
     override func viewDidAppear(_ animated: Bool) {
         
-        print("view did appear entered")
-        
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "Event")
@@ -165,7 +163,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         if(segue.identifier == "transitionToDetails"){
             let displayVC = segue.destination as! EventDetailsViewController
             
-            print(currEvent)
             
             displayVC.name = (currEvent["eventName"] as? String)!
             
