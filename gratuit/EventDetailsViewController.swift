@@ -12,6 +12,18 @@ import AlamofireImage
 class EventDetailsViewController: UIViewController {
     
     var event: PFObject?
+    
+    var name: String = ""
+    
+    var descript: String = ""
+    
+    var location: String = ""
+    
+    var start: String = ""
+    
+    var end: String = ""
+    
+    var imageUrlString: String = ""
 
     @IBOutlet weak var eventName: UILabel!
     
@@ -21,37 +33,43 @@ class EventDetailsViewController: UIViewController {
     
     @IBOutlet weak var endTime: UILabel!
     
-    @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var startTime: UILabel!
+    
+    @IBOutlet weak var imageView: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("entered")
+        print(name)
         
-        eventName.text = event!["eventName"] as! String
+        //print("entered")
         
-        print("1")
+        //print(event)
         
-        eventDescription.text = event?["eventDescription"] as? String
+        //print(event!["eventName"] as! String)
+        eventName.text = name
         
-        print("2")
+        //print("1")
         
-        eventLocation.text = event?["eventLocation"] as? String
+        eventDescription.text = descript
         
-        print("3")
+        //print("2")
         
-        endTime.text = event?["endTime"] as? String
+        eventLocation.text = location
         
-        print("4")
+        //print("3")
         
-        startTime.text = event?["startTime"] as? String
+        endTime.text = end
+        
+        //print("4")
+        
+        startTime.text = start
         
         //let imageFile = event["eventImage"] as! PFFileObject
-        //let urlString = imageFile.url!
-        //let url = URL(string: urlString)!
+        let url = URL(string: imageUrlString)!
+       
+        imageView.af.setImage(withURL: url)
         
         //imageView.setImage(withURL: url)
         

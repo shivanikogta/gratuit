@@ -16,6 +16,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     
     var events = [PFObject]()
     
+    var currEvent: PFObject!
+    
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -141,11 +143,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
                 if (location.latitude == marker.position.latitude
                     && location.longitude == marker.position.longitude) {
                     
-                    print(event)
+                    self.currEvent = event
                     
-                     let sender: PFObject = event
+                    //print(event)
                     
-                     performSegue(withIdentifier: "transitionToDetails", sender: sender)
+                    performSegue(withIdentifier: "transitionToDetails", sender: self)
                     
                     break
                 }
@@ -156,6 +158,33 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         
         
         return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if(segue.identifier == "transitionToDetails"){
+            let displayVC = segue.destination as! EventDetailsViewController
+            
+            print(currEvent)
+            
+            displayVC.name = (currEvent["eventName"] as? String)!
+            
+            displayVC.descript = (currEvent["eventDescription"] as? String)!
+            
+            displayVC.location = (currEvent["eventLocation"] as? String)!
+            
+            displayVC.end = (currEvent["endTime"] as? String)!
+            
+            displayVC.start = (currEvent["startTime"] as? String)!
+            
+            
+            let imageFile = currEvent["eventImage"] as! PFFileObject
+            
+            displayVC.imageUrlString = imageFile.url!
+            
+        }
+        
+        
     }
     
     

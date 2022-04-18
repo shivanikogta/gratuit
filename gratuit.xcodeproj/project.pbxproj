@@ -47,7 +47,7 @@
 		D197F21627F4946500518D71 /* EventsListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventsListView.storyboard; sourceTree = "<group>"; };
 		D197F21A27F494DD00518D71 /* MyEventsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyEventsView.storyboard; sourceTree = "<group>"; };
 		D197F21C27F4951500518D71 /* CreateEvents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEvents.storyboard; sourceTree = "<group>"; };
-		D1E1FA742807E0B500DF2B85 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		D1E1FA742807E0B500DF2B85 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
