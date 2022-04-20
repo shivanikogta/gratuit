@@ -7,6 +7,7 @@
 
 import UIKit
 import AlamofireImage
+import Alamofire
 import Parse
 
 class CreateEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
@@ -67,27 +68,82 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
             event["startTime"] = formatter.string(from:datePicker.date)
             event["endTime"] = formatter.string(from:endDatePicker.date)
             event["creator"] = PFUser.current()!
-            
-            if let imageData = imageView.image?.pngData() {
-                let file = PFFileObject(name: "image.png", data: imageData)
-                event["eventImage"] = file
+        
+            let key : String = "AIzaSyB9yK-oJ1Dso6HroDWYUmzaigkVVmJ3TeE"
+        let postParameters:[String: Any] = ["address": eventLocation.text ?? "Purdue University","key":key]
+            let url : String = "https://maps.googleapis.com/maps/api/geocode/json"
+        
+        var latCoord : String = ""
+        var lngCoord : String = ""
+
+        if let imageData = imageView.image?.pngData() {
+            let file = PFFileObject(name: "image.png", data: imageData)
+            event["eventImage"] = file
+        }
+        else {
+            let image = UIImage(named: "NotAvailable")
+            let file = PFFileObject(name: "image.png", data: image!.pngData()!)
+            event["eventImage"] = file
+        }
+        
+            AF.request(url, method: .get,  parameters: postParameters, encoding: URLEncoding.default)
+                    .responseJSON { response in
+                        switch response.result {
+                        case .success(let value):
+//                            print(value["results"][0]["geometry"]["location"]["lat"].doubleValue)
+//                            do {
+//                                let jsonDictionary = try JSONSerialization.jsonObject(with: value!, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String: Any]
+//                            }
+//                            catch {
+//                                print("some errorrrr")
+//                            }
+//                            if let data = (value as AnyObject).results(using: .utf8) {
+//                                if let json = try? JSON(data: data) {
+//                                    print(json[0])
+//                                }
+//                            }
+                            if let json = value as? [String: Any]{
+                                if let jsonArray = json["results"] as? [[String:Any]],
+                                   let result = jsonArray.first {
+                                    if let geometry = result["geometry"] as? [String:Any] {
+                                        if let location = geometry["location"] as? [String:Any] {
+                                            print(location["lat"]!) // the value is an optional.
+                                            print(location["lng"]!)
+                                            latCoord = String(describing: location["lat"]!)
+                                            lngCoord = String(describing: location["lng"]!)
+                                            print("Latitude and Longitude:")
+                                            print(latCoord)
+                                            print(lngCoord)
+                                            event["latitude"] = latCoord
+                                            event["longitude"] = lngCoord
+                                                event.saveInBackground { (success, error) in
+                                                    if success {
+                                                        self.dismiss(animated: true, completion: nil)
+                                                    } else {
+                                                        print("error in saving photo")
+                                                    }
+                                                }
+                                        }
+                                    }
+                                }
+                            }
+                        case .failure(let error):
+                            print(error)
+                        }
             }
-            else {
-                let image = UIImage(named: "NotAvailable")
-                let file = PFFileObject(name: "image.png", data: image!.pngData()!)
-                event["eventImage"] = file
-            }
+        
+//            AF.request(url, method: .get, parameters: postParameters, encoding: URLEncoding.default, headers: nil).responseJSON {  response in
+//
+//                if let receivedResults = response.result.value
+//                {
+//                    let resultParams = receivedResults
+//                    print(resultParams) // RESULT JSON
+//                    print(resultParams["status"]) // OK, ERROR
+//                    print(resultParams["results"][0]["geometry"]["location"]["lat"].doubleValue) // approximately latitude
+//                    print(resultParams["results"][0]["geometry"]["location"]["lng"].doubleValue) // approximately longitude
+//                }
+//            }
             
-            event["latitude"] = String("22.2846")
-            event["longitude"] = String("114.1581")
-            
-            event.saveInBackground { (success, error) in
-                if success {
-                    self.dismiss(animated: true, completion: nil)
-                } else {
-                    print("error in saving photo")
-                }
-            }
     }
     /*
     // MARK: - Navigation

@@ -7,6 +7,7 @@ target 'gratuit' do
 
   # Pods for gratuit
   pod 'AlamofireImage'
+  pod 'Alamofire'
   pod 'Parse'
   inherit! :search_paths
   pod 'GoogleMaps','6.1.1'

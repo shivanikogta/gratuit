@@ -14,6 +14,7 @@ PODS:
     - Bolts/Tasks (= 1.9.1)
 
 DEPENDENCIES:
+  - Alamofire
   - AlamofireImage
   - GoogleMaps (= 6.1.1)
   - Parse
@@ -33,6 +34,6 @@ SPEC CHECKSUMS:
   GoogleMaps: 94e6e0851beece6678af9f508f4918b7a7c61722
   Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
 
-PODFILE CHECKSUM: bdf40c6d66b6278872e0ecb4dc836442f71561c1
+PODFILE CHECKSUM: 011d1c91cde5b2ab8bf223f5fa146b4bfc68d3c8
 
 COCOAPODS: 1.9.3
