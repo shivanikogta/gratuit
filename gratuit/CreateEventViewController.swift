@@ -118,7 +118,11 @@ class CreateEventViewController: UIViewController, UIImagePickerControllerDelega
                                             event["longitude"] = lngCoord
                                                 event.saveInBackground { (success, error) in
                                                     if success {
-                                                        self.dismiss(animated: true, completion: nil)
+                                                        let vc = self.presentingViewController!.children[0].children[0] as! MapViewController
+                                                            self.dismiss(animated: true) {
+                                                                vc.viewDidAppear(true)
+                                                            }
+
                                                     } else {
                                                         print("error in saving photo")
                                                     }
