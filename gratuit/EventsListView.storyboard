@@ -87,7 +87,7 @@
                                                     <rect key="frame" x="8" y="30" width="100" height="101"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASe-ot-zk6">
-                                                    <rect key="frame" x="116" y="117" width="33.5" height="19"/>
+                                                    <rect key="frame" x="116" y="96" width="33.5" height="19"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -104,43 +104,35 @@
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFo-df-oto">
-                                                    <rect key="frame" x="116" y="30" width="105" height="52"/>
+                                                    <rect key="frame" x="116" y="30" width="105" height="24"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
                                                     <color key="textColor" red="0.26274509800000001" green="0.54117647059999996" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2z-IS-T3s">
-                                                    <rect key="frame" x="116" y="90" width="240" height="19"/>
+                                                    <rect key="frame" x="116" y="69" width="60" height="19"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rFo-df-oto" firstAttribute="leading" secondItem="T2z-IS-T3s" secondAttribute="leading" id="2IH-x1-Etp"/>
+                                                <constraint firstItem="ASe-ot-zk6" firstAttribute="leading" secondItem="PHv-BQ-I8l" secondAttribute="trailing" constant="8" id="3U7-cw-Y3N"/>
+                                                <constraint firstItem="T2z-IS-T3s" firstAttribute="leading" secondItem="PHv-BQ-I8l" secondAttribute="trailing" constant="8" id="80M-cf-YEE"/>
                                                 <constraint firstItem="PHv-BQ-I8l" firstAttribute="leading" secondItem="2pL-rx-L8M" secondAttribute="leading" constant="8" id="Bng-Ad-kh2"/>
                                                 <constraint firstItem="Mzi-g3-MBw" firstAttribute="leading" secondItem="2pL-rx-L8M" secondAttribute="leadingMargin" constant="-20" id="F0q-xy-JzR"/>
-                                                <constraint firstAttribute="bottom" secondItem="ASe-ot-zk6" secondAttribute="bottom" constant="3" id="FbD-Uj-4Ss"/>
                                                 <constraint firstItem="M26-UQ-Edu" firstAttribute="leading" secondItem="2pL-rx-L8M" secondAttribute="leading" constant="364" id="GIa-rk-GZG"/>
-                                                <constraint firstItem="ASe-ot-zk6" firstAttribute="top" secondItem="T2z-IS-T3s" secondAttribute="bottom" constant="8" id="Ood-ke-1kV"/>
+                                                <constraint firstItem="ASe-ot-zk6" firstAttribute="top" secondItem="T2z-IS-T3s" secondAttribute="bottom" constant="8" id="Gql-5U-75D"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PHv-BQ-I8l" secondAttribute="bottom" constant="8" id="S59-Ei-5kG"/>
                                                 <constraint firstItem="PHv-BQ-I8l" firstAttribute="top" secondItem="Mzi-g3-MBw" secondAttribute="bottom" constant="8" id="SDT-S4-KbH"/>
                                                 <constraint firstItem="rFo-df-oto" firstAttribute="leading" secondItem="2pL-rx-L8M" secondAttribute="leading" constant="116" id="YhV-0e-QBS"/>
-                                                <constraint firstItem="rFo-df-oto" firstAttribute="leading" secondItem="ASe-ot-zk6" secondAttribute="leading" id="a5Z-UE-qjP"/>
-                                                <constraint firstItem="T2z-IS-T3s" firstAttribute="top" secondItem="rFo-df-oto" secondAttribute="bottom" constant="8" id="aLP-H5-5hy"/>
                                                 <constraint firstItem="Mzi-g3-MBw" firstAttribute="top" secondItem="2pL-rx-L8M" secondAttribute="top" id="bxc-ZK-yTS"/>
-                                                <constraint firstItem="ASe-ot-zk6" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2pL-rx-L8M" secondAttribute="bottomMargin" constant="8" id="fp0-uR-eXH"/>
                                                 <constraint firstItem="M26-UQ-Edu" firstAttribute="top" secondItem="Mzi-g3-MBw" secondAttribute="bottom" constant="32" id="hsz-5N-MCH"/>
                                                 <constraint firstItem="Mzi-g3-MBw" firstAttribute="centerX" secondItem="2pL-rx-L8M" secondAttribute="centerX" id="jar-Eb-yhy"/>
-                                                <constraint firstItem="T2z-IS-T3s" firstAttribute="top" secondItem="rFo-df-oto" secondAttribute="bottom" constant="8" id="mTR-aK-UaX"/>
                                                 <constraint firstAttribute="bottom" secondItem="M26-UQ-Edu" secondAttribute="bottom" constant="43" id="ouT-Zn-USR"/>
                                                 <constraint firstItem="rFo-df-oto" firstAttribute="top" secondItem="Mzi-g3-MBw" secondAttribute="bottom" constant="8" id="pU2-Vy-SUZ"/>
-                                                <constraint firstAttribute="trailing" secondItem="ASe-ot-zk6" secondAttribute="trailing" constant="264.5" id="qji-sp-4Lc"/>
                                                 <constraint firstItem="rFo-df-oto" firstAttribute="leading" secondItem="PHv-BQ-I8l" secondAttribute="trailing" constant="8" id="t13-A9-TWy"/>
-                                                <constraint firstItem="M26-UQ-Edu" firstAttribute="leading" secondItem="T2z-IS-T3s" secondAttribute="trailing" constant="8" id="tnK-e1-3AR"/>
-                                                <constraint firstItem="ASe-ot-zk6" firstAttribute="top" secondItem="T2z-IS-T3s" secondAttribute="bottom" constant="8" id="v92-oe-gNN"/>
-                                                <constraint firstItem="T2z-IS-T3s" firstAttribute="leading" secondItem="PHv-BQ-I8l" secondAttribute="trailing" constant="8" id="wyI-HO-o7T"/>
-                                                <constraint firstItem="M26-UQ-Edu" firstAttribute="leading" secondItem="T2z-IS-T3s" secondAttribute="trailing" constant="8" id="xW4-dF-r7T"/>
+                                                <constraint firstItem="T2z-IS-T3s" firstAttribute="top" secondItem="rFo-df-oto" secondAttribute="bottom" constant="15" id="yYc-Ux-gvr"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
