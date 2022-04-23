@@ -21,7 +21,7 @@ class EventsListViewController: UIViewController, UITableViewDelegate, UITableVi
         
         tableView.delegate = self
         tableView.dataSource = self
-        
+        self.tableView.rowHeight = 139
         print("view did load finished")
         // Do any additional setup after loading the view.
     }
@@ -52,10 +52,19 @@ class EventsListViewController: UIViewController, UITableViewDelegate, UITableVi
         print(events)
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
         let event = events[indexPath.row]
+        let dateTime = event["startTime"] as! String
+        let timeComponents = dateTime.components(separatedBy: ", ")
+        let date = timeComponents[0]
+        let startTime = timeComponents[1]
+        let endDateTime = event["endTime"] as! String
+        let endTimeComponents = endDateTime.components(separatedBy: ", ")
+        let endTime = endTimeComponents[1]
+        let time = startTime + endTime
         cell.eventName.text = event["eventName"] as! String
-        cell.eventTime.text = event["startTime"] as! String
-        // cell.eventLocation.text = event["eventLocation"] as! String
-        
+        cell.eventTime.text = time
+        cell.eventLocation.text = event["eventLocation"] as! String
+        cell.date.text = date
+        print(event["startTime"] as! String)
         let imageFile = event["eventImage"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
@@ -65,8 +74,6 @@ class EventsListViewController: UIViewController, UITableViewDelegate, UITableVi
         print(cell)
         return cell
     }
-    
-    
     /*
     // MARK: - Navigation
 
