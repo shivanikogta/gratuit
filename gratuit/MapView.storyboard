@@ -61,7 +61,7 @@
         <!--Map-->
         <scene sceneID="yiK-1r-3yj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WlR-Nh-Gbh" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MapView" automaticallyAdjustsScrollViewInsets="NO" id="WlR-Nh-Gbh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" selectedImage="map" id="QmS-Fo-5Wl">
                         <color key="badgeColor" red="0.26274511220000002" green="0.5411764979" blue="0.41176474089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
@@ -82,7 +82,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="10d-rQ-czP">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="dpj-Lb-Y9M" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dpj-Lb-Y9M" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cVs-H9-Scl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
