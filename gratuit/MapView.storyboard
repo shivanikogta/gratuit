@@ -103,7 +103,7 @@
         <scene sceneID="Ivm-Zk-JKB">
             <objects>
                 <viewController storyboardIdentifier="EventDetails" title="EventDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oHZ-PQ-u7d" customClass="EventDetailsViewController" customModule="gratuit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zBS-EW-7fn">
+                    <view key="view" contentMode="scaleToFill" id="zBS-EW-7fn" colorLabel="IBBuiltInLabel-Green">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -144,14 +144,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVI-PB-AEd">
-                                <rect key="frame" x="185" y="627" width="136" height="24"/>
+                                <rect key="frame" x="185" y="627" width="186" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.48627450979999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYZ-ek-HvS">
-                                <rect key="frame" x="185" y="713" width="136" height="24"/>
+                                <rect key="frame" x="185" y="713" width="186" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.48627450979999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
@@ -192,11 +192,6 @@
                                 <color key="textColor" red="0.10980392160000001" green="0.48627450979999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star unfilled" highlightedImage="Star filled" translatesAutoresizingMaskIntoConstraints="NO" id="iYh-8b-G0F">
-                                <rect key="frame" x="344" y="288" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3RS-cj-W1k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -539,8 +534,6 @@
     </scenes>
     <resources>
         <image name="NotAvailable" width="200" height="200"/>
-        <image name="Star filled" width="136" height="132"/>
-        <image name="Star unfilled" width="136" height="132"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="map" catalog="system" width="128" height="110"/>
