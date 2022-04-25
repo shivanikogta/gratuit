@@ -58,11 +58,13 @@ class EventsListViewController: UIViewController, UITableViewDelegate, UITableVi
         let startTime = timeComponents[1]
         let endDateTime = event["endTime"] as! String
         let endTimeComponents = endDateTime.components(separatedBy: ", ")
-        let endTime = endTimeComponents[1]
+        let endTime = " - " + endTimeComponents[1] + ", " + endTimeComponents[0]
         let time = startTime + endTime
         cell.eventName.text = event["eventName"] as! String
         cell.eventTime.text = time
+        cell.eventTime.sizeToFit()
         cell.eventLocation.text = event["eventLocation"] as! String
+        cell.eventLocation.sizeToFit()
         cell.date.text = date
         print(event["startTime"] as! String)
         let imageFile = event["eventImage"] as! PFFileObject

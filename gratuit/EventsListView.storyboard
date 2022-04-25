@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -69,78 +69,71 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="139" id="6uZ-AO-beg" customClass="EventCell" customModule="gratuit" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="139"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="150" id="gg9-ZL-si2" customClass="EventCell" customModule="gratuit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6uZ-AO-beg" id="2pL-rx-L8M">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gg9-ZL-si2" id="s8y-rR-QUf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzi-g3-MBw">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="  Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POb-k6-b5G">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="22"/>
                                                     <color key="backgroundColor" red="0.26274509800000001" green="0.54117647059999996" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotAvailable" translatesAutoresizingMaskIntoConstraints="NO" id="PHv-BQ-I8l">
-                                                    <rect key="frame" x="8" y="30" width="100" height="101"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="NotAvailable" translatesAutoresizingMaskIntoConstraints="NO" id="deg-KF-FKt">
+                                                    <rect key="frame" x="9" y="0.0" width="100" height="187"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASe-ot-zk6">
-                                                    <rect key="frame" x="116" y="96" width="33.5" height="19"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6O-Y1-bbG">
+                                                    <rect key="frame" x="117" y="66" width="33.5" height="19"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M26-UQ-Edu">
-                                                    <rect key="frame" x="364" y="54" width="42" height="42"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="42" id="zGv-wy-7r9"/>
-                                                    </constraints>
-                                                    <color key="tintColor" red="0.26274511220000002" green="0.5411764979" blue="0.41176474089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" image="star" catalog="system">
-                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="27" scale="large"/>
-                                                    </state>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFo-df-oto">
-                                                    <rect key="frame" x="116" y="30" width="105" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1l-7s-NDO">
+                                                    <rect key="frame" x="117" y="34" width="105" height="24"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
                                                     <color key="textColor" red="0.26274509800000001" green="0.54117647059999996" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2z-IS-T3s">
-                                                    <rect key="frame" x="116" y="69" width="60" height="19"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J32-E9-hg7">
+                                                    <rect key="frame" x="117" y="93" width="236" height="19"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfq-CO-Swv">
+                                                    <rect key="frame" x="347" y="60" width="47" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.26274509800000001" green="0.54117647059999996" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ASe-ot-zk6" firstAttribute="leading" secondItem="PHv-BQ-I8l" secondAttribute="trailing" constant="8" id="3U7-cw-Y3N"/>
-                                                <constraint firstItem="T2z-IS-T3s" firstAttribute="leading" secondItem="PHv-BQ-I8l" secondAttribute="trailing" constant="8" id="80M-cf-YEE"/>
-                                                <constraint firstItem="PHv-BQ-I8l" firstAttribute="leading" secondItem="2pL-rx-L8M" secondAttribute="leading" constant="8" id="Bng-Ad-kh2"/>
-                                                <constraint firstItem="Mzi-g3-MBw" firstAttribute="leading" secondItem="2pL-rx-L8M" secondAttribute="leadingMargin" constant="-20" id="F0q-xy-JzR"/>
-                                                <constraint firstItem="M26-UQ-Edu" firstAttribute="leading" secondItem="2pL-rx-L8M" secondAttribute="leading" constant="364" id="GIa-rk-GZG"/>
-                                                <constraint firstItem="ASe-ot-zk6" firstAttribute="top" secondItem="T2z-IS-T3s" secondAttribute="bottom" constant="8" id="Gql-5U-75D"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PHv-BQ-I8l" secondAttribute="bottom" constant="8" id="S59-Ei-5kG"/>
-                                                <constraint firstItem="PHv-BQ-I8l" firstAttribute="top" secondItem="Mzi-g3-MBw" secondAttribute="bottom" constant="8" id="SDT-S4-KbH"/>
-                                                <constraint firstItem="rFo-df-oto" firstAttribute="leading" secondItem="2pL-rx-L8M" secondAttribute="leading" constant="116" id="YhV-0e-QBS"/>
-                                                <constraint firstItem="Mzi-g3-MBw" firstAttribute="top" secondItem="2pL-rx-L8M" secondAttribute="top" id="bxc-ZK-yTS"/>
-                                                <constraint firstItem="M26-UQ-Edu" firstAttribute="top" secondItem="Mzi-g3-MBw" secondAttribute="bottom" constant="32" id="hsz-5N-MCH"/>
-                                                <constraint firstItem="Mzi-g3-MBw" firstAttribute="centerX" secondItem="2pL-rx-L8M" secondAttribute="centerX" id="jar-Eb-yhy"/>
-                                                <constraint firstAttribute="bottom" secondItem="M26-UQ-Edu" secondAttribute="bottom" constant="43" id="ouT-Zn-USR"/>
-                                                <constraint firstItem="rFo-df-oto" firstAttribute="top" secondItem="Mzi-g3-MBw" secondAttribute="bottom" constant="8" id="pU2-Vy-SUZ"/>
-                                                <constraint firstItem="rFo-df-oto" firstAttribute="leading" secondItem="PHv-BQ-I8l" secondAttribute="trailing" constant="8" id="t13-A9-TWy"/>
-                                                <constraint firstItem="T2z-IS-T3s" firstAttribute="top" secondItem="rFo-df-oto" secondAttribute="bottom" constant="15" id="yYc-Ux-gvr"/>
+                                                <constraint firstItem="deg-KF-FKt" firstAttribute="top" secondItem="POb-k6-b5G" secondAttribute="bottom" constant="8" id="Gkd-TF-0zH"/>
+                                                <constraint firstItem="POb-k6-b5G" firstAttribute="centerX" secondItem="s8y-rR-QUf" secondAttribute="centerX" id="Gkv-oq-IKg"/>
+                                                <constraint firstItem="J32-E9-hg7" firstAttribute="leading" secondItem="deg-KF-FKt" secondAttribute="trailing" constant="8" id="H8e-eT-CLF"/>
+                                                <constraint firstItem="deg-KF-FKt" firstAttribute="leading" secondItem="s8y-rR-QUf" secondAttribute="leading" constant="8" id="Ifw-Dt-w8C"/>
+                                                <constraint firstItem="u1l-7s-NDO" firstAttribute="leading" secondItem="deg-KF-FKt" secondAttribute="trailing" constant="8" id="NYt-gv-dG2"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="deg-KF-FKt" secondAttribute="bottom" constant="8" id="U3a-ly-cF3"/>
+                                                <constraint firstItem="u1l-7s-NDO" firstAttribute="top" secondItem="POb-k6-b5G" secondAttribute="bottom" constant="8" id="XrY-qF-WDT"/>
+                                                <constraint firstItem="J32-E9-hg7" firstAttribute="top" secondItem="u1l-7s-NDO" secondAttribute="bottom" constant="15" id="YVN-ij-FdP"/>
+                                                <constraint firstItem="u1l-7s-NDO" firstAttribute="leading" secondItem="s8y-rR-QUf" secondAttribute="leading" constant="116" id="cST-Yd-XYs"/>
+                                                <constraint firstItem="POb-k6-b5G" firstAttribute="leading" secondItem="s8y-rR-QUf" secondAttribute="leadingMargin" constant="-20" id="cW9-6u-IyN"/>
+                                                <constraint firstItem="POb-k6-b5G" firstAttribute="top" secondItem="s8y-rR-QUf" secondAttribute="top" id="nbQ-mQ-D6s"/>
+                                                <constraint firstItem="K6O-Y1-bbG" firstAttribute="top" secondItem="J32-E9-hg7" secondAttribute="bottom" constant="8" id="o7v-2O-ksH"/>
+                                                <constraint firstItem="K6O-Y1-bbG" firstAttribute="leading" secondItem="deg-KF-FKt" secondAttribute="trailing" constant="8" id="wiQ-QC-NTs"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="date" destination="Mzi-g3-MBw" id="gmq-Hj-Uxi"/>
-                                            <outlet property="eventLocation" destination="T2z-IS-T3s" id="eqQ-Bx-Ec2"/>
-                                            <outlet property="eventName" destination="rFo-df-oto" id="Afq-Fk-80V"/>
-                                            <outlet property="eventTime" destination="ASe-ot-zk6" id="1B0-Zp-EYh"/>
-                                            <outlet property="photoView" destination="PHv-BQ-I8l" id="UGf-Nx-Cch"/>
+                                            <outlet property="date" destination="POb-k6-b5G" id="6ve-M5-miw"/>
+                                            <outlet property="eventLocation" destination="J32-E9-hg7" id="qgn-w9-p5K"/>
+                                            <outlet property="eventName" destination="u1l-7s-NDO" id="bNh-uQ-uev"/>
+                                            <outlet property="eventTime" destination="K6O-Y1-bbG" id="aAd-u3-fys"/>
+                                            <outlet property="photoView" destination="deg-KF-FKt" id="c31-dp-gV1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
