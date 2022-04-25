@@ -29,23 +29,16 @@ class EventCell: UITableViewCell {
     }
 
     var starred:Bool = false;
-    var event = PFObject();
-    
-    func setParam(_ inputEvent:PFObject) {
-        event = inputEvent
-    }
     
     func setStarred(_ isStarred:Bool) {
         starred = isStarred
         if (starred) {
             print("starred")
             starButton.setImage(UIImage(named: "Star filled"), for: UIControl.State.normal)
-            event["starred"] = "True"
         }
         else {
             print("not starred")
             starButton.setImage(UIImage(named: "Star unfilled"), for: UIControl.State.normal)
-            event["starred"] = "False"
         }
     }
     

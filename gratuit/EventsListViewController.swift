@@ -75,9 +75,6 @@ class EventsListViewController: UIViewController, UITableViewDelegate, UITableVi
         print("here")
         print(cell)
         
-        cell.setParam(event);
-        cell.setStarred(events[indexPath.row]["starred"] as! Bool)
-        
         return cell
     }
     /*
