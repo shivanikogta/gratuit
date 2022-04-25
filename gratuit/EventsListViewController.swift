@@ -74,6 +74,10 @@ class EventsListViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.photoView.af.setImage(withURL: url)
         print("here")
         print(cell)
+        
+        cell.setParam(event);
+        cell.setStarred(events[indexPath.row]["starred"] as! Bool)
+        
         return cell
     }
     /*
