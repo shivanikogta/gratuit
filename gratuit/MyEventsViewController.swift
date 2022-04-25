@@ -50,7 +50,7 @@ class MyEventsViewController: UIViewController, UITableViewDelegate, UITableView
         let isStarred = event["starred"] as! Bool
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
         var counter = 0
-        if (isStarred  && counter < events.count) {
+        if (isStarred) {
             //let event = events[indexPath.row]
             let dateTime = event["startTime"] as! String
             let timeComponents = dateTime.components(separatedBy: ", ")
@@ -59,7 +59,7 @@ class MyEventsViewController: UIViewController, UITableViewDelegate, UITableView
             let endDateTime = event["endTime"] as! String
             let endTimeComponents = endDateTime.components(separatedBy: ", ")
             let endTime = endTimeComponents[1]
-            let time = startTime + "   " + endTime
+            let time = startTime + " - " + endTime
             cell.eventName.text = event["eventName"] as! String
             cell.eventTime.text = time
             cell.eventLocation.text = event["eventLocation"] as! String
@@ -70,7 +70,6 @@ class MyEventsViewController: UIViewController, UITableViewDelegate, UITableView
             
             cell.photoView.af.setImage(withURL: url)
         }
-        counter += 1
         return cell
     }
     /*
