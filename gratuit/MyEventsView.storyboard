@@ -83,27 +83,27 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="NotAvailable" translatesAutoresizingMaskIntoConstraints="NO" id="hSb-BC-R7U">
-                                                    <rect key="frame" x="9" y="0.0" width="100" height="187"/>
-                                                </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9K-hS-Pi4">
-                                                    <rect key="frame" x="117" y="66" width="33.5" height="19"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="5:40 PM - 7:50 PM, 4/27/22" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9K-hS-Pi4">
+                                                    <rect key="frame" x="117" y="66" width="194" height="19"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ir9-CJ-x9j">
-                                                    <rect key="frame" x="117" y="34" width="105" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Donuts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ir9-CJ-x9j">
+                                                    <rect key="frame" x="117" y="34" width="63" height="24"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
                                                     <color key="textColor" red="0.26274509800000001" green="0.54117647059999996" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uee-Kn-aS3">
-                                                    <rect key="frame" x="117" y="93" width="60" height="19"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" misplaced="YES" text="Felix Haas Hall, West Lafayette" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uee-Kn-aS3">
+                                                    <rect key="frame" x="117" y="93" width="213" height="19"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Homemade-Donuts-1" translatesAutoresizingMaskIntoConstraints="NO" id="hSb-BC-R7U">
+                                                    <rect key="frame" x="9" y="11" width="100" height="187"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="C9K-hS-Pi4" firstAttribute="top" secondItem="Uee-Kn-aS3" secondAttribute="bottom" constant="8" id="7Qk-Jh-vFX"/>
@@ -145,7 +145,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NotAvailable" width="200" height="200"/>
+        <image name="Homemade-Donuts-1" width="500" height="750"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="pin" catalog="system" width="119" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
