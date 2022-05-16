@@ -90,11 +90,8 @@ Maps/lists events happening within a given radius of an individual, specifically
 
 <img src="https://user-images.githubusercontent.com/10847009/159151079-f8aef445-d042-4136-83f2-8170d5dbfcb3.jpg" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
+### Digital Wireframes & Mockups
 ![Screenshot 2022-03-20 at 12 38 29 PM](https://user-images.githubusercontent.com/10847009/159175139-084e2f4c-392c-4e99-8e9d-1f748f8eb3f3.jpg)
-
-
-### [BONUS] Interactive Prototype
 
 ## Schema
 ### Models
